@@ -62,7 +62,7 @@ public class MainActivity extends AppCompatActivity {
                 } catch (FileNotFoundException e) {
                     e.printStackTrace();
                 }
-                return newFixedLengthResponse(Response.Status.OK, "text/plain", fis, file.length());
+                return newFixedLengthResponse(Response.Status.OK, "application/octet-stream", fis, file.length());
             }
             else{
                 try {
